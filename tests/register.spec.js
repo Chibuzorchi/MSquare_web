@@ -8,7 +8,7 @@ test('click register button', async () => {
   await page.goto('https://dev-admin.msq.market/');
   await page.click('#btn_login_register');
   await page.getByPlaceholder('Name').fill("Kelly Handsome")
-  await page.getByPlaceholder('Email address').fill("kelly@gmail.com")
+  await page.getByPlaceholder('Email address').fill("kelly@gmail.com");
   await page.getByPlaceholder('Password', { exact: true }).fill("123456")
   await page.getByPlaceholder('Confirm Password', { exact: true }).fill("123456")
 

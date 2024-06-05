@@ -13,7 +13,6 @@ test('click register button', async () => {
   await page.getByPlaceholder('Confirm Password', { exact: true }).fill("123456")
 
   await page.getByRole('checkbox', { name: 'I accept terms & conditions' }).check();
-  
   await page.getByRole('button', { name: "Sign Up" }).click();
   
 });

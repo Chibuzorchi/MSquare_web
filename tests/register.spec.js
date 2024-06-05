@@ -1,6 +1,6 @@
 const { test, chromium } = require('@playwright/test');
 
-test('click register button', async ({ page }) => {
+test('click register button', async () => {
   const browser = await chromium.launch({ headless: false });
   const page = await browser.newPage();
 
